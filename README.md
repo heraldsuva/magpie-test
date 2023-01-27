@@ -9,8 +9,9 @@ Create a simple store that utilizes the Magpie Checkout API
 ```bash
   git clone git@github.com:heraldsuva/magpie-test.git
   cd magpie-test
-  cp .env.example .env
   composer install
+  php artisan key:generate
+  cp .env.example .env
 ```
 
 Setup your database and Magpie secret key from `.env`
@@ -29,6 +30,7 @@ MAGPIE_API_SK=
   php artisan migrate
   php artisan db:seed
   php artisan serve
+  npm install
   npm run dev
 ```
 ## Admin Login
